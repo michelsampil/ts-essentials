@@ -19,3 +19,13 @@ tsc -w
 ## To run the resulted js files
 cd src
 node --watch [FILE_NAME]
+
+OR
+
+npx ts-node [FILE_NAME]
+(Needs npx to be installed 👇)
+
+## Installing npx in order to run ts files
+npm install -g npx
+
+
