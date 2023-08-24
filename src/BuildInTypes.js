@@ -1,13 +1,25 @@
 "use strict";
-// string, number and boolean
+// Primitive TS data types
+// Commontly used
 const happyString = 'happy 😃';
 const happyNumber = 3;
 const happyBoolean = true;
+const nullo = null;
+const undefinedThing = undefined;
+//Not frecuently symbol, bigint
+// Complex data types
 // Array
 const arr = [1, 2, 3];
 // const arr: Array<number> = [1, 2, '3'] // 👈 ❌ We can't put a string because is defined as Array<number>
 console.log(arr);
 // Objects & Classes
+// Without implementing classes
+const user = {
+    name: 'pepe',
+    age: 21
+};
+console.log('user: ', user);
+// Implementing Classes
 class VirtualPoint {
     constructor(x, y) {
         this.x = x;
@@ -17,6 +29,8 @@ class VirtualPoint {
 const newVPoint = new VirtualPoint(13, 56);
 console.log(newVPoint);
 // Union Types
+// Combine multiple types allowing a variable to
+// have different possible types
 function print(value) {
     console.log('Printing string or number: ', value);
 }
@@ -27,12 +41,6 @@ function printAny(value) {
     console.log('Printing string or number: ', value);
 }
 printAny('printing ANYthing...');
-// Differences Between Type Aliases and Interfaces
-// Type aliases and interfaces are very similar,
-// and in many cases you can choose between them freely.
-// Almost all features of an interface are available in type,
-// the key distinction is that a type cannot be re-opened 
-// to add new properties vs an interface which is always extendable.
 // Enums
 var CurrencyEnum;
 (function (CurrencyEnum) {

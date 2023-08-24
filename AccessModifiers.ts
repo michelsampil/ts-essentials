@@ -27,5 +27,5 @@ class Person {
 const homer = new Person('Homer Simpson', 45, "742 Evergreen Terrace");
 homer.introduce()
 console.log(homer.name);
-console.log(homer.age); // 👈 ❌ We can't access to a private property outside of the class
-console.log(homer.address); // 👈 ❌ We can't access to a protected property outside of the class
+//console.log(homer.age); // 👈 ❌ We can't access to a private property outside of the class
+//console.log(homer.address); // 👈 ❌ We can't access to a protected property outside of the class
