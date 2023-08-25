@@ -29,7 +29,7 @@ console.log(`ItemStat: ${ItemStat}`);
 var ResponseCode;
 (function (ResponseCode) {
     ResponseCode[ResponseCode["SeverSideError"] = 500] = "SeverSideError";
-    ResponseCode[ResponseCode["ClientSideError"] = 300] = "ClientSideError";
+    ResponseCode[ResponseCode["ClientSideError"] = 400] = "ClientSideError";
     ResponseCode[ResponseCode["Ok"] = 200] = "Ok";
 })(ResponseCode || (ResponseCode = {}));
 const responseStatus = ResponseCode.SeverSideError;

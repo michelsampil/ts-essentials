@@ -22,7 +22,7 @@ node --watch [FILE_NAME]
 
 OR
 
-npx ts-node [FILE_NAME]
+npx ts-node [FILE_NAME] or ts-node [FILE_NAME]
 (Needs npx to be installed 👇)
 
 ## Installing npx in order to run ts files
