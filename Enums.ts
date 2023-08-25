@@ -28,7 +28,7 @@ console.log(`ItemStat: ${ItemStat}`);
 // 👇 We can do the same with numbers...
 enum ResponseCode {
   SeverSideError = 500,
-  ClientSideError = 300,
+  ClientSideError = 400,
   Ok = 200,
 }
 
