@@ -1,5 +1,5 @@
 "use strict";
-// Primitive TS data types
+// PRIMITIVE TS data types
 // Commontly used
 const happyString = 'happy 😃';
 const happyNumber = 3;
@@ -7,7 +7,9 @@ const happyBoolean = true;
 const nullo = null;
 const undefinedThing = undefined;
 //Not frecuently symbol, bigint
-// Complex data types
+//const bInt = Bigint(1000000000000000);
+//const id: symbol = Symbol("uniqueId");
+// COMPLEX data types
 // Array
 const arr = [1, 2, 3];
 // const arr: Array<number> = [1, 2, '3'] // 👈 ❌ We can't put a string because is defined as Array<number>
@@ -36,26 +38,39 @@ function print(value) {
 }
 print('printing string');
 print(44552211);
-// WildCard or JS by default Behaviour
+//SPECIAL TYPES
+// type: UNKNOW
+const value = "Hello";
+let lengthNum;
+if (typeof value === "string") {
+    lengthNum = value.length;
+}
+else {
+    lengthNum = 0;
+}
+console.log('lengthNum: ', lengthNum);
+// type: ANY. WildCard or JS by default Behaviour
 function printAny(value) {
     console.log('Printing string or number: ', value);
 }
 printAny('printing ANYthing...');
-// Enums
-var CurrencyEnum;
-(function (CurrencyEnum) {
-    CurrencyEnum[CurrencyEnum["USD"] = 0] = "USD";
-    CurrencyEnum[CurrencyEnum["EU"] = 1] = "EU";
-    CurrencyEnum[CurrencyEnum["PESO"] = 2] = "PESO";
-})(CurrencyEnum || (CurrencyEnum = {}));
-// String Enum
-var CountryEnum;
-(function (CountryEnum) {
-    CountryEnum["Usa"] = "United State";
-    CountryEnum["Ger"] = "Deuschland";
-    CountryEnum["Pl"] = "Polska";
-    CountryEnum["Uy"] = "Uruguay";
-})(CountryEnum || (CountryEnum = {}));
+// type: NEVER
+function throwError() {
+    throw new Error('Bomb error 💣');
+}
+try {
+    throwError(); // Function that throws an error
+    // error and never returns.
+}
+catch (error) {
+    console.log('Err: ', error);
+}
+// type: VOID
+function logMessage(message) {
+    console.log(message);
+}
+;
+logMessage('Printing a message 🥔');
 // Casting
 let numberA = 4;
 // console.log((numberA as string)); // 👈 ❌  That will fail, need first be casted to unknown
