@@ -1,4 +1,4 @@
-// Primitive TS data types
+// PRIMITIVE TS data types
 
 // Commontly used
 const happyString = 'happy 😃';
@@ -8,8 +8,10 @@ const nullo = null;
 const undefinedThing = undefined;
 
 //Not frecuently symbol, bigint
+//const bInt = Bigint(1000000000000000);
+//const id: symbol = Symbol("uniqueId");
 
-// Complex data types
+// COMPLEX data types
 
 // Array
 const arr: Array<number> = [1, 2, 3]
@@ -50,32 +52,44 @@ console.log(newVPoint);
 function print(value: string | number) {
   console.log('Printing string or number: ', value);
 }
-
 print('printing string');
 print(44552211);
 
-// WildCard or JS by default Behaviour
+//SPECIAL TYPES
+
+// type: UNKNOW
+const value: unknown = "Hello";
+let lengthNum: number;
+if (typeof value === "string") {
+  lengthNum = value.length;
+} else {
+  lengthNum = 0
+}
+console.log('lengthNum: ', lengthNum);
+
+// type: ANY. WildCard or JS by default Behaviour
 function printAny(value: any) {
   console.log('Printing string or number: ', value);
 }
-
 printAny('printing ANYthing...');
 
-// Enums
-enum CurrencyEnum {
-  "USD",
-  "EU",
-  "PESO"
+// type: NEVER
+function throwError(): never {
+  throw new Error('Bomb error 💣')
 }
 
-// String Enum
-
-enum CountryEnum {
-  Usa = 'United State',
-  Ger = 'Deuschland',
-  Pl = 'Polska',
-  Uy = 'Uruguay'
+try {
+  throwError(); // Function that throws an error
+  // error and never returns.
+} catch (error) {
+  console.log('Err: ', error);
 }
+
+// type: VOID
+function logMessage(message: string): void {
+  console.log(message);
+};
+logMessage('Printing a message 🥔');
 
 // Casting
 
