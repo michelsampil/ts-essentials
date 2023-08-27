@@ -1,13 +1,13 @@
 // PRIMITIVE TS data types
 
-// Commontly used
+// Commonly used
 const happyString = 'happy 😃';
 const happyNumber = 3;
 const happyBoolean = true;
 const nullo = null;
 const undefinedThing = undefined;
 
-//Not frecuently symbol, bigint
+//Not frequently symbol, bigint
 //const bInt = Bigint(1000000000000000);
 //const id: symbol = Symbol("uniqueId");
 
@@ -57,7 +57,7 @@ print(44552211);
 
 //SPECIAL TYPES
 
-// type: UNKNOW
+// type: UNKNOWN
 const value: unknown = "Hello";
 let lengthNum: number;
 if (typeof value === "string") {
@@ -67,7 +67,7 @@ if (typeof value === "string") {
 }
 console.log('lengthNum: ', lengthNum);
 
-// type: ANY. WildCard or JS by default Behaviour
+// type: ANY. WildCard or JS by default Behavior
 function printAny(value: any) {
   console.log('Printing string or number: ', value);
 }
