@@ -1,10 +1,10 @@
 "use strict";
 //Access Modifiers (Public, Private, Protected)
 //Access modifiers in TypeScript control the visibility 
-//and accessibility of class members (properties andmethods).
+//and accessibility of class members (properties and methods).
 // - public members are accessible from anywhere,
-// - private members are only accessible within the classitself,
-// - protected members are accessible within the class andits subclasses.
+// - private members are only accessible within the class itself,
+// - protected members are accessible within the class and its subclasses.
 class Person {
     constructor(name, age, address) {
         this.name = name;

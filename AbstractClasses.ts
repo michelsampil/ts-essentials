@@ -1,7 +1,7 @@
 // Abstract Classes
 // Abstract classes are classes that cannot be instantiated directly,
-// serving as blueprints for other classes. They cancontain abstract methods
-// that must be implemented inthe derived classes.
+// serving as blueprints for other classes. They can contain abstract methods
+// that must be implemented in the derived classes.
 
 abstract class Vehicle {
   abstract move(): void;

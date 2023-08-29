@@ -22,6 +22,6 @@ console.log(stringrBox.getValue())
 
 
 // In the example, the Box class uses a generic type parameter T,
-// allowing the box to hold values of differenttypes.
-// The type is specified when creating an instance ofthe class,
+// allowing the box to hold values of different types.
+// The type is specified when creating an instance of the class,
 // providing type safety and flexibility.

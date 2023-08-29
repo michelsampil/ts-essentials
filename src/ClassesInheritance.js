@@ -4,7 +4,7 @@
 // enabling code reuse and creating class hierarchies.
 // SuperClass, ParentClass
 class Animal {
-    // The constructor method allows the class to be instanciated
+    // The constructor method allows the class to be instantiated
     constructor(name) {
         this.name = name;
     }

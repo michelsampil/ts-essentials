@@ -11,7 +11,7 @@ enum OrderStateEnum {
 const ItemStatus = OrderStateEnum.Packed;
 console.log(`ItemStatus: ${ItemStatus}`);
 
-// 💡 We can set a enuration string in order to see a more representative value
+// 💡 We can set a enumeration string in order to see a more representative value
 enum OrderEnum {
   Buyed = "Buyed",
   Packed = "Packed",

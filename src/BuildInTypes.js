@@ -6,7 +6,7 @@ const happyNumber = 3;
 const happyBoolean = true;
 const nullo = null;
 const undefinedThing = undefined;
-//Not frecuently symbol, bigint
+//Not frequently symbol, bigint
 //const bInt = Bigint(1000000000000000);
 //const id: symbol = Symbol("uniqueId");
 // COMPLEX data types
