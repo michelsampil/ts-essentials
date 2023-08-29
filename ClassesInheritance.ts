@@ -6,7 +6,7 @@
 class Animal {
   name: string;
 
-  // The constructor method allows the class to be instanciated
+  // The constructor method allows the class to be instantiated
   constructor(name: string) {
     this.name = name;
   }

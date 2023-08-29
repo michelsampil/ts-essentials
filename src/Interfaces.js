@@ -1,9 +1,9 @@
 "use strict";
-// Interfaces define the structure and contract that a classmust adhere to.
-// They specify properties, methodsignatures,
-// and ensure consistent implementationacross multiple classes.
+// Interfaces define the structure and contract that a class must adhere to.
+// They specify properties, method signatures,
+// and ensure consistent implementation across multiple classes.
 // A class can implement multiple interfaces but can't Inheritance 
-// from multiple classes (It rellies on the programming language).
+// from multiple classes (It relies on the programming language).
 class Circle {
     constructor(radius) {
         this.radius = radius;
