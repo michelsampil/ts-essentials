@@ -28,14 +28,8 @@ class CircleT implements ShapeType {
   draw(): void {
     console.log("Drawing a circle");
   }
-
-  login(): void {
-    console.log('here...')
-  }
 }
 
 const circleT = new CircleT(5);
 console.log(`TCircle Area: ${circleT.area()}`);
 circleT.draw();
-circleT.login();
-
