@@ -17,8 +17,8 @@ class Box<T> {
 const numberBox = new Box<number>(42);
 console.log(numberBox.getValue())
 
-const stringrBox = new Box<string>('I said hop in...🔫 🛩');
-console.log(stringrBox.getValue())
+const stringBox = new Box<string>('I said hop in...🔫 🛩');
+console.log(stringBox.getValue())
 
 
 // In the example, the Box class uses a generic type parameter T,

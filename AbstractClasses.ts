@@ -9,12 +9,21 @@ abstract class Vehicle {
 
 class Car extends Vehicle {
   move(): void {
-    console.log('the car is moving...')
+    console.log('the car 🚗 is moving...')
+  }
+}
+
+class Plane extends Vehicle {
+  move(): void {
+    console.log('the plane 🛫 is flying...')
   }
 }
 
 const car = new Car();
 car.move();
+
+const plane = new Plane();
+plane.move();
 
 // const vehicle = new Vehicle(); 👈 ❌ We can't create a instance of an abstract class.
 
