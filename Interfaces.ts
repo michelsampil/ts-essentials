@@ -7,6 +7,11 @@
 interface Shape {
   area(): number;
   draw(): void;
+  // ...
+}
+
+interface FourSide {
+  drawDiagonal(): void;
 }
 
 class Circle implements Shape {
@@ -28,6 +33,57 @@ class Circle implements Shape {
 const circle = new Circle(5);
 console.log(`Circle Area: ${circle.area()}`);
 circle.draw();
+
+class Square implements Shape, FourSide {
+  width: number;
+
+  constructor(width: number) {
+    this.width = width;
+  }
+
+  area(): number {
+    return this.width * this.width;
+  }
+
+  draw(): void {
+    console.log("Drawing a square");
+  }
+
+  drawDiagonal(): void {
+
+  }
+}
+
+const square = new Square(20)
+square.draw();
+square.drawDiagonal();
+
+
+class Rectangle implements Shape, FourSide {
+  width: number;
+  height: number;
+
+  constructor(width: number, height: number) {
+    this.width = width;
+    this.height = height;
+  }
+
+  area(): number {
+    return this.width * this.height;
+  }
+
+  draw(): void {
+    console.log("Drawing a rectangle");
+  }
+
+  drawDiagonal(): void {
+
+  }
+}
+
+const rectangle = new Rectangle(10, 20)
+rectangle.draw();
+rectangle.drawDiagonal();
 
 
 // Implementing an interface means that a class must 

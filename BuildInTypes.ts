@@ -44,6 +44,10 @@ class VirtualPoint {
 const newVPoint = new VirtualPoint(13, 56);
 console.log(newVPoint);
 
+// Function type
+function sumar(numA: number, numB: number): void {
+  console.log(numA + numB)
+}
 
 // Union Types
 // Combine multiple types allowing a variable to
